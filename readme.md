@@ -34,7 +34,8 @@ rm *.o bs_tree
 
 ## Shortcut
 ```
-// Compiling Seperately is more useful when debugging but compliation can be done all at the same time
+// Compiling Seperately is more useful when debugging
+// but compliation can be done all at the same time
 g++ -c main.cc insert.cc search.cc -o bs_tree.o
 ```
 
