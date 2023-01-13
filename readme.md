@@ -1,14 +1,14 @@
 ## Compilation Lifecycle
-- Preprocess: g++ -E
+- Preprocess: ```g++ -E```
   - Macro substitution
   - Stripping comments
   - File inclusion
-- Compilation: g++ -S
+- Compilation: ```g++ -S```
   - Input: C++; Output: assembly code
-- Assembly: g++ -c
+- Assembly: ```g++ -c```
   - Input: assembly code
   - Output: binary code (.o file)
-- Linking: g++ -o
+- Linking: ```g++ -o```
   - Input: object file (.o)
   - Output: executable file (.exe)
   - Symbol resolution
@@ -33,8 +33,10 @@ rm *.o bs_tree
 ```
 
 ## Shortcut
-- Compiling Seperately is more useful when debugging but compliation can be done all at the same time
-```g++ -c main.cc insert.cc search.cc -o bs_tree.o```
+```
+// Compiling Seperately is more useful when debugging but compliation can be done all at the same time
+g++ -c main.cc insert.cc search.cc -o bs_tree.o
+```
 
 ## Checking Version
 ```g++ --version```
